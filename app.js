@@ -1,4 +1,7 @@
-// Fill out the yourAnswer props -> Open the index and check the console
+/* 
+  Fill out the `yourAnswer` props with what you think will be the value of `question` 
+  Open the index.html and check the console
+*/
 
 const questions = [
 
