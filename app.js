@@ -91,7 +91,7 @@ const questions = [
     question: (_ => { const o = { 'a': 'A', undefined: 0 }; return o[[o["A"] + '']]; })(),
     "yourAnswer": null,
     isCorrect: null,
-    questionStr: `(_ => { const o = { 'a': 'A', undefined: 0  }; return o[[o["A"]+'']]; })()`,
+    questionStr: `(_ => { const o = { 'a': 'A', undefined: 0 }; return o[[o["A"] + '']]; })()`,
   },
   {
     id: 13,
