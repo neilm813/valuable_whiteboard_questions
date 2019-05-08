@@ -114,7 +114,7 @@ const questions = [
 
       return o[
         [
-          o["A"] + ''
+          o['A'] + ''
         ]
       ];
     })(),
@@ -128,6 +128,13 @@ const questions = [
     "yourAnswer": null,
     isCorrect: null,
     questionStr: `Object.hasOwnProperty("hasOwnProperty")`,
+  },
+  {
+    id: 14,
+    question: [] == ![],
+    "yourAnswer": null,
+    isCorrect: null,
+    questionStr: `[] == ![]`,
   },
 ];
 
