@@ -77,21 +77,47 @@ const questions = [
   },
   {
     id: 10,
-    question: (_ => { msg = 'cool and good'; var msg; return msg; })(),
+    question: (_ => {
+
+      msg = 'cool and good';
+      var msg; 
+      
+      return msg;
+    })(),
     "yourAnswer": null,
     isCorrect: null,
     questionStr: `(_ => { msg = 'cool and good'; var msg; return msg; })()`,
   },
   {
     id: 11,
-    question: (_ => { const o = { '1': '1', 1: 1 }; return o[1]; })(),
+    question: (_ => {
+
+      const o = {
+        '1': '1',
+        1: 1
+      };
+
+      return o['1'];
+    })(),
     "yourAnswer": null,
     isCorrect: null,
-    questionStr: `(_ => { const o = { '1': '1', 1: 1 }; return o[1]; })()`,
+    questionStr: `(_ => { const o = { '1': '1', 1: 1 }; return o['1']; })()`,
   },
   {
     id: 12,
-    question: (_ => { const o = { 'a': 'A', undefined: 0 }; return o[[o["A"] + '']]; })(),
+    question: (_ => {
+
+      const o = {
+        'a': 'A',
+        undefined: 0
+      };
+
+      return o[
+        [
+          o["A"] + ''
+        ]
+      ];
+    })(),
     "yourAnswer": null,
     isCorrect: null,
     questionStr: `(_ => { const o = { 'a': 'A', undefined: 0 }; return o[[o["A"] + '']]; })()`,
